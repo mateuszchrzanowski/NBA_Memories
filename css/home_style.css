@@ -1,0 +1,213 @@
+/*-----------HOME PAGE------------*/
+/*GLOBAL*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	/*background: grey;*/
+	font-size: 1rem;
+	color: #EBF4F7;
+	line-height: 1.5;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 20px;
+	width: 100vw;
+	height: 100vh;
+	min-height: 400px;
+	margin: auto;
+	text-align: center;
+	max-width: 1300px;
+}
+
+/*BACKGROUND*/
+.video_background{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.video_background video{
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.overlay{
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #1A2A40;
+	z-index: 1;
+	opacity: 0.85;
+}
+
+/*GRID*/
+.home_grid_content{
+	z-index: 2;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 2fr 1fr;
+	grid-gap: 20px;
+	width: 100vw;
+	height: 100vh;
+	min-height: 600px;
+	padding: 2rem;
+	max-width: 1300px;
+	margin: auto;
+}
+
+.home_grid_content .box{
+	border: 3px solid #F2A30F;
+	border-radius: 10px;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+	text-decoration: none;
+}
+
+.home_grid_content .box:hover{
+	background: #2474A6;
+	cursor: pointer;
+}
+
+.home_grid_content .box p{
+	color: #EBF4F7;
+    font-family: 'Russo One', sans-serif;
+	font-size: 30px;
+}
+
+/*LOGO*/
+.home_grid_content #mch_logo{
+	grid-column: 1/4;
+	text-align: center;
+}
+
+#mch_logo img{
+	width: 350px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+/*-----------PAGES------------*/
+/*HEADER*/
+/*header{
+	background: #F2A30F;
+}
+
+header .mini_nba_logo{
+	width: 7rem;
+	float: left;
+	margin: 1rem 0 0 2rem;
+}
+
+header nav{
+	float: right;
+	margin-top: 1.5rem;
+}
+
+header ul{
+	margin: 0;
+	padding: 0;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 2rem 0 1rem;
+}
+
+header a{
+	text-decoration: none;
+}
+*/
+
+/*FOOTER*/
+footer{
+	grid-column: 1/4;
+	/*border: 3px solid #F2A30F;*/
+	border-radius: 10px;
+	/*background: #F2A30F;*/
+	/*background: #2474A6;*/
+	/*background: grey;*/
+	background: #677589;
+	display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+	opacity: 0.9;
+}
+
+#footer_content{
+	margin: auto;
+	width: 100%;
+}
+
+footer p{
+	color: #1A2A40;
+	font-size: 12px;
+	margin: 0;
+    font-family: 'Russo One', sans-serif;
+}
+
+footer .footer_div{
+	float: left;
+	width: 31%;
+	margin: 1%;
+	text-align: center;
+}
+
+footer #footer_copyrights{
+	margin-top: 30px;
+}
+
+footer #footer_copyrights a{
+	text-decoration: none;
+}
+
+footer #footer_copyrights span{
+	color: #064771;
+}
+
+footer .footer_div #mini_mch_logo{
+	width: 90px;
+}
+
+footer #footer_social{
+	float: left;
+	width: 30%;
+	margin-top: 30px;
+	text-align: center;
+}
+
+footer #footer_social img{
+	width: 20px;
+	margin: 15px;
+}
+
+footer #footer_social a{
+	text-align: center;
+}
+
+footer #footer_social img:hover{
+	opacity: 0.5;
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	transform: scale(1.3);
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+}
