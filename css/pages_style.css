@@ -6,11 +6,20 @@
 	box-sizing: border-box;
 }
 
+html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
 body{
 	background: #1A2A40;
 	font-size: 1rem;
 	color: #EBF4F7;
 	line-height: 1.5;
+	min-height: 100%;
+	position: relative;
+	/*height: 100%;*/
 }
 
 .container{
@@ -24,6 +33,7 @@ body{
 	margin: auto;
 	text-align: center;
 	/*max-width: 1300px;*/
+	padding-bottom: 7.5em;
 }
 
 /*HEADER*/
@@ -73,45 +83,64 @@ header .current_page{
 }
 
 /*GRID*/
-.pages_grid_content{
-	z-index: 2;
+.container .pages_grid_content{
+	/*z-index: 2;*/
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(5, 1fr);
+	/*grid-template-rows: repeat(8, 1fr);*/
 	grid-gap: 20px;
 	/*width: 100vw;*/
-	height: 100vh;
+	/*height: 100vh;*/
 	/*min-height: 600px;*/
 	padding: 2rem;
 	padding-top: 8rem;
 	max-width: 1300px;
 	margin: auto;
+	/*box-sizing: content-box;*/
 }
 
-.pages_grid_content .box{
-	border: 3px solid #F2A30F;
-	border-radius: 10px;
+.pages_grid_content .video_box{
 	display: flex;
-    justify-content: center;
-    align-content: center;
+    /*justify-content: center;*/
+    align-items: flex-start;
     flex-direction: column;
 }
 
-.pages_grid_content .box:hover{
+.pages_grid_content .video_box:hover{
 	/*background: #2474A6;*/
 	cursor: pointer;
 }
 
-.pages_grid_content .box p{
+/*
+.pages_grid_content .video_box iframe{
+	allowfullscreen="allowfullscreen"
+	mozallowfullscreen="mozallowfullscreen"
+	msallowfullscreen="msallowfullscreen"
+	oallowfullscreen="oallowfullscreen"
+	webkitallowfullscreen="webkitallowfullscreen"
+}
+*/
+
+.pages_grid_content .video_box p{
+	font-family: 'Titillium+Web', sans-serif;
+	align-self: center;
 	color: #EBF4F7;
-    font-family: 'Russo One', sans-serif;
-	font-size: 30px;
+	font-size: 15px;
+}
+
+.pages_grid_content .video_box span{
+	font-weight: bold;
+}
+
+.pages_grid_content .video_box .video_title{
+	font-family: 'Russo One', sans-serif;
+	/*align-self: center;*/
+	color: #F2A30F;
 }
 
 /*FOOTER*/
 footer{
-	width: 100%;
-	height: 7.5rem;
+	height: 7.5em;
 	/*grid-column: 1/5;*/
 	/*border: 3px solid #F2A30F;*/
 	/*border-radius: 10px;*/
@@ -125,6 +154,9 @@ footer{
     /*flex-direction:column;*/
 	opacity: 0.9;
 	border-top: 3px solid #F2A30F;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 #footer_content{
