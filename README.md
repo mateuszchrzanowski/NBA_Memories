@@ -1,0 +1,3 @@
+# NBA_Memories
+
+This is simple HTML and CSS website. No JS. No Bootstrap. I have used CSS Grid. On this site you can watch the best moments from NBA in separate videos. I have divided website into six pages (plus Home page) which relate to different elements of the basketball game. On each page there are videos with the best actions of various NBA players (former and current). All videos are from YouTube.
