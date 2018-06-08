@@ -88,7 +88,7 @@ body{
 	/*min-height: 450px;*/
 	/*max-height: 100vh;*/
 	padding: 2rem;
-	max-width: 2300px;
+	max-width: 1700px;
 	margin: 0 auto;
 	text-align: center;
 	min-height: 500px;
@@ -305,6 +305,8 @@ footer #footer_social{
 	justify-content: center;
 	align-items: center;
 	/*flex-direction: column;*/
+	padding-left: 7%;
+	padding-right: 7%;
 }
 
 footer #footer_social img{
@@ -628,6 +630,7 @@ footer #footer_social img:hover{
 		width: 100%;
 		text-align: center;
 		/*display: block;*/
+		margin: 0;
 		margin-bottom: 10px;
 		margin-top: 10px;
 	}

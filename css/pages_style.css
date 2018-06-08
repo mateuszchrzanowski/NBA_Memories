@@ -14,7 +14,7 @@ html{
 
 body{
 	background: #1A2A40;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	color: #EBF4F7;
 	line-height: 1.5;
 	min-height: 100%;
@@ -43,6 +43,7 @@ header .nav_bar{
 	width: 100%;
 	height: 5.5rem;
 	border-bottom: 3px solid #F2A30F;
+	z-index: 2;
 }
 
 header .mini_nba_logo{
@@ -58,8 +59,8 @@ header nav{
     font-family: 'Russo One', sans-serif;
 }
 
-header .current_page{
-	color: #064771;
+header #horizontal_menu .current_page{
+	color: #064771
 }
 
 /*
@@ -175,9 +176,9 @@ header .current_page{
 	/*width: 100vw;*/
 	/*height: 100vh;*/
 	/*min-height: 600px;*/
-	padding: 2rem;
+	padding: 4rem;
 	padding-top: 8rem;
-	max-width: 1300px;
+	max-width: 1500px;
 	margin: auto;
 	/*box-sizing: content-box;*/
 	/*grid-auto-columns: minmax(500px, auto);*/
@@ -226,6 +227,8 @@ header .current_page{
 /*FOOTER*/
 footer{
 	height: 7.5em;
+	height: auto;
+	text-align: cneter;
 	/*grid-column: 1/5;*/
 	/*border: 3px solid #F2A30F;*/
 	/*border-radius: 10px;*/
@@ -247,26 +250,39 @@ footer{
 #footer_content{
 	margin: auto;
 	width: 100%;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	/*padding-left: 2rem;
+	padding-right: 2rem;*/
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 }
 
 footer p{
 	color: #1A2A40;
-	font-size: 12px;
-	margin: 0;
+	/*font-size: 12px;*/
+	font-size: 0.6rem;
+	margin: 0 auto;
+	padding: 2px;
     font-family: 'Russo One', sans-serif;
 }
 
 footer .footer_div{
 	float: left;
 	width: 31%;
-	margin: 1%;
+	margin: 0 auto;
 	text-align: center;
 }
 
 footer #footer_copyrights{
-	margin-top: 25px;
+	/*margin-top: 25px;*/
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*height: 100%;*/
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
 }
 
 footer #footer_copyrights a{
@@ -278,23 +294,38 @@ footer #footer_copyrights span{
 }
 
 footer .footer_div #mini_mch_logo{
-	width: 90px;
+	margin: 0 auto;
+	/*height: 100%;*/
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+footer .footer_div #mini_mch_logo_img{
+	width: 70px;
+	/*margin: 0 auto;*/
 }
 
 footer #footer_social{
-	float: left;
-	width: 30%;
-	margin-top: 30px;
-	text-align: center;
+	margin: 0 auto;
+	/*height: 100%;*/
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 7%;
+	padding-right: 7%;
 }
 
 footer #footer_social img{
 	width: 20px;
-	margin: 15px;
 }
 
 footer #footer_social a{
 	text-align: center;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin: auto;
 }
 
 footer #footer_social img:hover{
@@ -308,6 +339,17 @@ footer #footer_social img:hover{
 }
 
 /*MEDIA QUERIES*/
+@media (min-width: 1310px){
+	.container .pages_grid_content{
+		grid-template-columns: repeat(5, 1fr);
+		/*max-width: 2000px;*/
+	}
+	
+	.pages_grid_content .video_box{
+		max-width: 700px;
+	}
+}
+
 @media (max-width: 925px){
 	.nav_bar #horizontal_menu{
 		display: none;
@@ -319,10 +361,6 @@ footer #footer_social img:hover{
 	
 	.container .pages_grid_content{
 		grid-template-columns: repeat(3, 1fr);
-	}
-	
-	footer{
-		height: 6rem;
 	}
 	
 	footer #footer_copyrights{
@@ -350,18 +388,31 @@ footer #footer_social img:hover{
 	
 	.container .pages_grid_content{
 		grid-template-columns: repeat(2, 1fr);
+		padding: 1rem;
 	}
 	
 	footer{
 		height: 12em;
+		display: block;
+		height: auto;
+	}
+	
+	footer #footer_content{
+		display: block;
+		margin: 0 auto;
 	}
 	
 	footer .footer_div{
 		float: none;
 		text-align: center;
 		width: 100%;
-		padding: 0;
+		margin: 0 auto;
+		display: block;
+	}
+	
+	footer #footer_copyrights{
 		margin: 0;
+		margin-top: 10
 	}
 	
 	footer #footer_social{
@@ -369,6 +420,13 @@ footer #footer_social img:hover{
 		width: 100%;
 		margin: 0;
 		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	footer #footer_social a{
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 }
 
