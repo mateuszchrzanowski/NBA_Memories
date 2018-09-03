@@ -13,8 +13,6 @@ html{
 }
 
 body{
-	/*background: grey;*/
-	/*font-size: 1rem;*/
 	color: #EBF4F7;
 	line-height: 1.5;
 	overflow-x: hidden;
@@ -25,14 +23,10 @@ body{
 
 .container{
 	display: grid;
-	/*grid-template-columns: repeat(3, 1fr);*/
-	/*grid-template-rows: repeat(4, 1fr);*/
 	width: 100%;
 	height: 100vh;
-	/*min-height: 450px;*/
 	margin: auto;
 	text-align: center;
-	/*max-width: 2300px;*/
 	text-align: center;
 	justify-content: center;
 	align-content: center;
@@ -47,12 +41,10 @@ body{
 	top: 0;
 	left: 0;
 	overflow: hidden;
-	/*display: flex;*/
 	min-height: 500px;
 }
 
 .video_background video{
-	/*min-height: 400px;*/
 	min-height: 100%;
 	min-width: 100%;
 	position: absolute;
@@ -60,7 +52,6 @@ body{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	overflow: hidden;
-	/*position: center;*/
 }
 
 .overlay{
@@ -80,13 +71,10 @@ body{
 	z-index: 2;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	/*grid-template-rows: 4fr 8fr 4fr;*/
 	grid-template-rows: repeat(3, 1fr);
 	grid-gap: 20px;
 	width: 100vw;
 	height: 100vh;
-	/*min-height: 450px;*/
-	/*max-height: 100vh;*/
 	padding: 2rem;
 	max-width: 1700px;
 	margin: 0 auto;
@@ -115,10 +103,8 @@ body{
 }
 
 .home_grid_content .box p{
-	/*color: #EBF4F7;*/
 	color: #87878B;
     font-family: 'Russo One', sans-serif;
-	/*font-size: 1rem;*/
 	font-size: 1.5vw;
 }
 
@@ -160,9 +146,6 @@ body{
 
 #main_basket_logo img{
 	width: 150px;
-	/*position: relative;
-	top: 50%;
-	transform: translateY(-50%);*/
 }
 
 #logo_content{
@@ -179,50 +162,11 @@ body{
 	margin-top: 0.5em;
 }
 
-
-/*-----------PAGES------------*/
-/*HEADER*/
-/*header{
-	background: #F2A30F;
-}
-
-header .mini_nba_logo{
-	width: 7rem;
-	float: left;
-	margin: 1rem 0 0 2rem;
-}
-
-header nav{
-	float: right;
-	margin-top: 1.5rem;
-}
-
-header ul{
-	margin: 0;
-	padding: 0;
-}
-
-header li{
-	float: left;
-	display: inline;
-	padding: 0 2rem 0 1rem;
-}
-
-header a{
-	text-decoration: none;
-}
-*/
-
 /*FOOTER*/
 footer{
 	grid-column: 1/7;
-	/*border: 3px solid #F2A30F;*/
 	border-radius: 10px;
-	/*background: #F2A30F;*/
-	/*background: #2474A6;*/
-	/*background: grey;*/
 	background: #677589;
-	/*display: flex;*/
 	display: inline-flex;
     justify-content:center;
     align-content:center;
@@ -236,7 +180,6 @@ footer{
 #footer_content{
 	margin: 0 auto;
 	width: 100%;
-	/*height: 100%;*/
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -245,7 +188,6 @@ footer{
 footer p{
 	color: #1A2A40;
 	font-size: 10px;
-	/*font-size: 0.75vw;*/
 	margin: 0 auto;
 	padding: 2px;
     font-family: 'Russo One', sans-serif;
@@ -254,18 +196,14 @@ footer p{
 footer .footer_div{
 	float: left;
 	width: 31%;
-	/*margin: 1%;*/
 	text-align: center;
 	margin: 0 auto;
 }
 
 footer #footer_copyrights{
-	/*margin-top: 2%;*/
-	/*margin-bottom: 2%;*/
 	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	/*height: 100%;*/
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -282,7 +220,6 @@ footer #footer_copyrights span{
 
 footer .footer_div #mini_mch_logo{
 	margin: 0 auto;
-	/*height: 100%;*/
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -291,27 +228,19 @@ footer .footer_div #mini_mch_logo{
 
 footer .footer_div #mini_mch_logo_img{
 	width: 70px;
-	/*margin: 0 auto;*/
 }
 
 footer #footer_social{
-	/*float: left;
-	width: 30%;
-	margin-top: 30px;
-	text-align: center;*/
 	margin: 0 auto;
-	/*height: 100%;*/
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	/*flex-direction: column;*/
 	padding-left: 7%;
 	padding-right: 7%;
 }
 
 footer #footer_social img{
 	width: 20px;
-	/*margin: 15px;*/
 }
 
 footer #footer_social a{
@@ -332,50 +261,9 @@ footer #footer_social img:hover{
 }
 
 /*MEDIA QUERIES*/
-@media (min-width: 1441px){
-	/*#main_basket_logo img{
-		width: 12vw;
-		height: auto;*/
-		/*position: relative;
-		top: 50%;
-		transform: translateY(-50%);*/
-	}
-	
-	/*
-	#logo_content p{
-		font-size: 2vw;
-	}
-	*/
-	/*
-	footer{
-		height: 8vh;
-	}
-	*/
-	/*
-	footer .footer_div #mini_mch_logo_img{
-		width: 4vw;
-		margin: 0 auto;
-	}
-	*/
-}
-
 @media (max-width: 980px){
 	.home_grid_content{
 	grid-gap: 10px;
-	}
-	
-	/*.home_grid_content .box p{
-	font-size: 20px;
-	}
-	*/
-	
-	footer{
-		/*grid-column: 1/2;*/
-		/*display: block;*/
-	}
-	
-	footer #footer_copyrights{
-		/*margin-top: 20px;*/
 	}
 	
 	footer .footer_div p{
@@ -392,112 +280,12 @@ footer #footer_social img:hover{
 	}
 }
 
-/*
-@media (max-width: 700px){
-	.home_grid_content{
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(7, 1fr);
-		padding: 1rem;
-	}
-	
-	.home_grid_content #assists,
-	.home_grid_content #crossovers,
-	.home_grid_content #dunks,
-	.home_grid_content #circus,
-	.home_grid_content #blocks,
-	.home_grid_content #buzzer,
-	.home_grid_content #main_basket_logo{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	*/
-	/*
-	.home_grid_content #assists{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	
-	.home_grid_content #crossovers{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	
-	.home_grid_content #dunks{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	
-	.home_grid_content #circus{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	
-	.home_grid_content #blocks{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	
-	.home_grid_content #buzzer{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	
-	.home_grid_content #main_basket_logo{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	*/
-	/*
-	.home_grid_content .box{
-		margin-top: 10px;
-	}
-	
-	.home_grid_content .box p{
-		font-size: 20px;
-	}
-	
-	#main_basket_logo img{
-		width: 150px;
-	}
-	
-	#logo_content p{
-		font-size: 17px;
-	}
-	
-	footer{
-		grid-column: 1/2;
-	}
-}
-*/
-
-/*
-@media (max-width: 790){
-	footer #footer_copyrights{
-		grid-column: 1
-	}
-}
-*/
-
-@media (max-width: 790px){
-	/*.home_grid_content{
-		grid-auto-rows: initial;
-	}
-	*/
-	
-	footer{
-		/*align-items: center;
-		justify-items: center;*/
-		/*height: auto;*/
-	}
-}
-
 @media (max-width: 768px){
 	.video_background,
 	.overlay{
 		min-height: 530px;
 	}
 	
-	
 	.home_grid_content{
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(7, 1fr);
@@ -519,52 +307,9 @@ footer #footer_social img:hover{
 		text-align: center;
 	}
 	
-	/*
-	.home_grid_content #assists{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	
-	.home_grid_content #crossovers{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	
-	.home_grid_content #dunks{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	
-	.home_grid_content #circus{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	
-	.home_grid_content #blocks{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	
-	.home_grid_content #buzzer{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	
-	.home_grid_content #main_basket_logo{
-		grid-column: 1/2;
-		text-align: center;
-	}
-	*/
-	
 	.home_grid_content .box{
-		/*margin-top: 10px;*/
 		min-height: 30px;
 	}
-	
-	/*.home_grid_content .box p{
-		font-size: 1rem;
-	}
-	*/
 	
 	#main_basket_logo img{
 		width: 150px;
@@ -580,18 +325,12 @@ footer #footer_social img:hover{
 		height: auto;
 	}
 	
-	footer #footer_copyrights{
-		/*margin-top: 10px;
-		margin-bottom: 10px;*/
-	}
-	
 	footer .footer_div p{
 		font-size: 10px;
 	}
 	
 	footer #footer_social img{
 		width: 15px;
-		/*margin: 15px;*/
 	}
 }
 
@@ -629,7 +368,6 @@ footer #footer_social img:hover{
 		float: none;
 		width: 100%;
 		text-align: center;
-		/*display: block;*/
 		margin: 0;
 		margin-bottom: 10px;
 		margin-top: 10px;

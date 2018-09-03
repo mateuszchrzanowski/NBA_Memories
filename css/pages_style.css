@@ -19,20 +19,11 @@ body{
 	line-height: 1.5;
 	min-height: 100%;
 	position: relative;
-	/*height: 100%;*/
 }
 
 .container{
-	/*display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(4, 1fr);
-	grid-gap: 20px;
-	width: 100vw;
-	height: 100vh;
-	min-height: 400px;*/
 	margin: auto;
 	text-align: center;
-	/*max-width: 1300px;*/
 	padding-bottom: 7.5em;
 }
 
@@ -55,19 +46,12 @@ header .mini_nba_logo{
 header nav{
 	float: right;
 	margin-top: 1.8rem;
-	/*color: #EBF4F7;*/
     font-family: 'Russo One', sans-serif;
 }
 
 header #horizontal_menu .current_page{
 	color: #064771
 }
-
-/*
-.nav_bar #horizontal_menu{
-	display: none;
-}
-*/
 
 #horizontal_menu ul{
 	margin: 0;
@@ -142,8 +126,6 @@ header #horizontal_menu .current_page{
 	background-size: contain;
 	width: 30px;
 	height: 30px;
-	/*margin-top: 1.5rem;
-	margin-right: 2rem;*/
 }
 
 #hamburger_menu #hamburger_toggle:hover{
@@ -158,54 +140,27 @@ header #horizontal_menu .current_page{
 	background-image: url(../img/icons/close.png)
 }
 
-/*
-.nav_bar #hamburger_menu:focus #hamburger_menu_list{
-	display: block;
-}
-*/
-
-
-
 /*GRID*/
 .container .pages_grid_content{
-	/*z-index: 2;*/
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	/*grid-template-rows: repeat(8, 1fr);*/
 	grid-gap: 20px;
-	/*width: 100vw;*/
-	/*height: 100vh;*/
-	/*min-height: 600px;*/
 	padding: 4rem;
 	padding-top: 8rem;
 	max-width: 1500px;
 	margin: auto;
-	/*box-sizing: content-box;*/
-	/*grid-auto-columns: minmax(500px, auto);*/
 }
 
 .pages_grid_content .video_box{
 	display: flex;
-    /*justify-content: center;*/
     align-items: flex-start;
     flex-direction: column;
 	min-width: 200px;
 }
 
 .pages_grid_content .video_box:hover{
-	/*background: #2474A6;*/
 	cursor: pointer;
 }
-
-/*
-.pages_grid_content .video_box iframe{
-	allowfullscreen="allowfullscreen"
-	mozallowfullscreen="mozallowfullscreen"
-	msallowfullscreen="msallowfullscreen"
-	oallowfullscreen="oallowfullscreen"
-	webkitallowfullscreen="webkitallowfullscreen"
-}
-*/
 
 .pages_grid_content .video_box p{
 	font-family: 'Titillium+Web', sans-serif;
@@ -220,7 +175,6 @@ header #horizontal_menu .current_page{
 
 .pages_grid_content .video_box .video_title{
 	font-family: 'Russo One', sans-serif;
-	/*align-self: center;*/
 	color: #F2A30F;
 }
 
@@ -229,17 +183,7 @@ footer{
 	height: 7.5em;
 	height: auto;
 	text-align: cneter;
-	/*grid-column: 1/5;*/
-	/*border: 3px solid #F2A30F;*/
-	/*border-radius: 10px;*/
-	/*background: #F2A30F;*/
-	/*background: #2474A6;*/
-	/*background: grey;*/
 	background: #677589;
-	/*display: flex;*/
-    /*justify-content:center;
-    align-content:center;*/
-    /*flex-direction:column;*/
 	opacity: 0.9;
 	border-top: 3px solid #F2A30F;
 	position: absolute;
@@ -250,8 +194,6 @@ footer{
 #footer_content{
 	margin: auto;
 	width: 100%;
-	/*padding-left: 2rem;
-	padding-right: 2rem;*/
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -259,7 +201,6 @@ footer{
 
 footer p{
 	color: #1A2A40;
-	/*font-size: 12px;*/
 	font-size: 0.6rem;
 	margin: 0 auto;
 	padding: 2px;
@@ -274,11 +215,9 @@ footer .footer_div{
 }
 
 footer #footer_copyrights{
-	/*margin-top: 25px;*/
 	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	/*height: 100%;*/
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -295,7 +234,6 @@ footer #footer_copyrights span{
 
 footer .footer_div #mini_mch_logo{
 	margin: 0 auto;
-	/*height: 100%;*/
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -304,12 +242,10 @@ footer .footer_div #mini_mch_logo{
 
 footer .footer_div #mini_mch_logo_img{
 	width: 70px;
-	/*margin: 0 auto;*/
 }
 
 footer #footer_social{
 	margin: 0 auto;
-	/*height: 100%;*/
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -342,7 +278,6 @@ footer #footer_social img:hover{
 @media (min-width: 1310px){
 	.container .pages_grid_content{
 		grid-template-columns: repeat(5, 1fr);
-		/*max-width: 2000px;*/
 	}
 	
 	.pages_grid_content .video_box{
